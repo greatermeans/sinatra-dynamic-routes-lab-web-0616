@@ -1,0 +1,7 @@
+<% if defined?(@number) %>
+<%	 @number.to_i.times do |phrase| %>
+<%=    @phrase + "\n" %>
+<%   end %>
+<% else%>
+<%=   @words.join(' ') + '.' %>
+<% end %>
